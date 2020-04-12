@@ -62,3 +62,23 @@ foo = 5; // expression
 foo; // expression
 
 // -----------
+
+// 5. Explain why this code logs '510' instead ofr 15
+console.log("5" + 10);
+// In the above code JavaScript sees string and then a + (concatenation)
+// and coerce's 10 to string and then concatenate them together.
+// every + expression that has a string operand produces a string result
+
+// -----------
+// 5. Refactor the code from previous exercise to use explicit
+// coersion, so it logs 15 instead
+console.log(Number("5") + 10);
+
+// -----------
+
+// 7. Use the template literal syntax along with the expression
+// Number('5') + 10 to log the following sentence to the console:
+// The value of 5 + 10 is 15.
+console.log(`the value of 5 + 10 is ${Number("5") + 10}.`);
+
+// -----------
