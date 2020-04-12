@@ -70,7 +70,7 @@ console.log("5" + 10);
 // every + expression that has a string operand produces a string result
 
 // -----------
-// 5. Refactor the code from previous exercise to use explicit
+// 6. Refactor the code from previous exercise to use explicit
 // coersion, so it logs 15 instead
 console.log(Number("5") + 10);
 
@@ -82,3 +82,37 @@ console.log(Number("5") + 10);
 console.log(`the value of 5 + 10 is ${Number("5") + 10}.`);
 
 // -----------
+// 8. Will an error occur if you try to access an array element with
+// an index that is greater than or equal to the length of the array
+// -> No you will get undefined
+
+// -----------
+
+// 10. Create an object named pets that contains a list of pet names
+// and the types of animal
+let pets = {
+  asta: "dog",
+  butterscotch: "cat",
+  pudding: "cat",
+  neptune: "fish",
+  darwin: "lizard",
+};
+
+// -----------
+
+// 11. What value does the following expression evaluate to?
+"foo" === "Foo"; // -> false
+
+// -----------
+
+// 12. What value does the following expression evaluate to?
+parseInt("3.1415"); // -> 3 - because function give integer only
+
+// -----------
+
+// 13. What value does the following expression evaluate to?
+"12" < "9";
+// -> true - since the operands are string not number
+// JS performs character-by-character comparison going from let to right.
+// so on the first comparison it determines that '1' < '9', so '12'
+// must be less than '9'.
