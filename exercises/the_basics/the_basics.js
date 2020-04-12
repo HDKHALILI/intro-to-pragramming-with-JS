@@ -2,6 +2,8 @@
 // 1. Concatenate two or more strings
 console.log("Hadi" + " " + "Khalili");
 
+// ----------
+
 // 2. Use the arithmetic operators to determine the individual
 // digits of a 4-digit number like 4936
 // thousands place - 4, hundreds place - 9,
@@ -40,3 +42,13 @@ console.log("hundreds", hundreds);
 
 let thousands = (num - hundreds) / 10;
 console.log("thousands", thousands);
+
+// -----------
+
+// 3. Identify the data type for each of the following.
+// - 'true' -> String
+// - false -> Boolean
+// - 1.5 -> Number
+// - 2 -> Number
+// - undefined -> Undefined
+// - { foo: 'bar' } -> Object
