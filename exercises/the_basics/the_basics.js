@@ -52,3 +52,13 @@ console.log("thousands", thousands);
 // - 2 -> Number
 // - undefined -> Undefined
 // - { foo: 'bar' } -> Object
+
+// -----------
+
+// 4. Given the code below, indentify which lines are statements and
+// which are expressions
+var foo; // statement
+foo = 5; // expression
+foo; // expression
+
+// -----------
