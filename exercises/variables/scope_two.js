@@ -15,3 +15,14 @@ console.log(foo); // -> 'bar'
 // as longs as they are not in the same scope.
 // since we have declared foo variable with let statement
 // it doesn't change the value of foo outside the block.
+
+// 6. Will this program produce an error when run? Why or why not?
+const FOO = "bar";
+{
+  const FOO = "qux";
+}
+
+console.log(FOO); // -> 'bar'
+// the program will not produce an error.
+// because const statement is used to declare a new constant inside
+// a block which doesn't interfere with the constant FOO outside.
