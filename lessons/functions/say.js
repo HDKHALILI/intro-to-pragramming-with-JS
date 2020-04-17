@@ -5,7 +5,7 @@
 
 // above code refactored into function
 function say(words) {
-  console.log(words);
+  console.log(words + "!");
 }
 
 say("hello");
