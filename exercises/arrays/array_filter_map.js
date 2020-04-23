@@ -10,3 +10,18 @@ function oddLengths(array) {
 }
 
 console.log(oddLengths(arr));
+
+// using reduce
+function oddLengthsReduce(array) {
+  return array.reduce((output, word) => {
+    if (word.length % 2 !== 0) {
+      output.push(word.length)
+    }
+
+    return output;
+  }, [])
+}
+
+// oddLengthsReduce(arr);
+
+console.log(oddLengthsReduce(arr));
