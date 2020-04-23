@@ -19,10 +19,11 @@ function factorial(num) {
 // solution 3 - using recursion
 function factorialRecursive(num) {
 
-  if (num < 1) {
+  if (num <= 1) {
     return 1;
   } else {
-    // times current number with the current number - 1;
+    // times current number with the return value of
+    // factorialRecursive(current number - 1);
     // when the call reaches the bottom of tree
     // all the return values are multiplied to gether
     // like this for factorial of 8: 8 * 7 * 6 * 5 * 4 * 3 * 2
