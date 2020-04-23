@@ -15,9 +15,13 @@ console.log(oddLengths(arr));
 function oddLengthsReduce(array) {
   return array.reduce((output, word) => {
     if (word.length % 2 !== 0) {
+      // we append to output - then from outside this block we return
       output.push(word.length)
     }
-
+    // we need to return output since this return value
+    // will be used as the value for 'output' at next invocation
+    // if we don't return, 'undefined' will be returned --> which leads to
+    // error because we cannot push to 'undefined'
     return output;
   }, [])
 }
